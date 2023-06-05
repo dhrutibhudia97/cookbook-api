@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-q+!&iicn-=*w8&6^xa@021l10u-f5ya&gpl@_ei!y5u!=7(mu5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-dhrutibhudi-cookbookapi-nie1i81jomr.ws-eu98.gitpod.io']
 
 
 # Application definition
