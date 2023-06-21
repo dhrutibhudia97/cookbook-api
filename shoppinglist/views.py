@@ -8,8 +8,8 @@ from rest_framework.response import Response
 
 class ShoppingListView(generics.ShoppingListCreateAPIView):
     """View for listing and creating shopping list items."""
-    queryset = Item.objects.all()
-    serializer_class = ItemSerializer
+    queryset = ShoppingList.objects.all()
+    serializer_class = ShoppingListSerializer
     permission_classes = [IsOwnerOrReadOnly]
 
     def get_queryset(self):
