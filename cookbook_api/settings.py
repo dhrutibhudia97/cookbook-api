@@ -66,7 +66,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-dhrutibhudi-cookbookapi-34qauqbggil.ws-eu98.gitpod.io',
+    '8000-dhrutibhudi-cookbookapi-xj74eu2eobm.ws-eu100.gitpod.io',
     'localhost',
     'cookbook-project-5.herokuapp.com',
     os.environ.get('ALLOWED_HOST'),

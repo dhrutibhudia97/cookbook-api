@@ -6,7 +6,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 
 
-class ShoppingListView(generics.ShoppingListCreateAPIView):
+class ShoppingListView(generics.ListCreateAPIView):
     """View for listing and creating shopping list items."""
     queryset = ShoppingList.objects.all()
     serializer_class = ShoppingListSerializer
