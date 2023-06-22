@@ -66,7 +66,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-dhrutibhudi-cookbookapi-xj74eu2eobm.ws-eu100.gitpod.io',
+    '8000-dhrutibhudi-cookbookapi-qwaf7zpx2i6.ws-eu100.gitpod.io',
     'localhost',
     'cookbook-project-5.herokuapp.com',
     os.environ.get('ALLOWED_HOST'),
@@ -159,7 +159,7 @@ if 'DEV' in os.environ:
     }
 else:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
     
 
