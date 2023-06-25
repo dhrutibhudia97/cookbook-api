@@ -32,6 +32,10 @@ This was built using Django Rest Framework and ElephantSQL. The cookbook api has
 ## Testing (manual in a table)
 
 ## Validators used... (code institute python linter...)
+- https://pep8ci.herokuapp.com/# was used to validate all python code files (admin.py, apps.py, models.py, serializer.py, tests.py, urls.py and views.py) in cookbook_api, comments, likes, posts, profiles, followers and shoppinglist.
+
+![python validator - cookbook api](https://github.com/dhrutibhudia97/cookbook-api/assets/107180641/327f4e81-8f02-4bac-8df8-0328f487d561)
+
 ## screenshot results for coverage report "$ coverage run manage.py test" and "$ coverage report -m" or $python3 -m flake8 and screenshot...
 
 
