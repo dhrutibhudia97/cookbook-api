@@ -27,12 +27,13 @@ This was built using Django Rest Framework and ElephantSQL. The cookbook api has
 - Comments
 - Followers
 - Shopping List
-- 
+
 
 ## Testing (manual in a table)
 
 ## Validators used... (code institute python linter...)
-## screenshot results for coverage report "$ coverage run manage.py test" and "$ coverage report -m"
+## screenshot results for coverage report "$ coverage run manage.py test" and "$ coverage report -m" or $python3 -m flake8 and screenshot...
+
 
 ## Deployment steps
 ### cloning steps
