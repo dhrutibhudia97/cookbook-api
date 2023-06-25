@@ -4,7 +4,7 @@ from followers.models import Follower
 
 
 class ProfileSerializer(serializers.ModelSerializer):
-     """
+    """
     Serializer for the Profile model.
     """
     owner = serializers.ReadOnlyField(source='owner.username')
