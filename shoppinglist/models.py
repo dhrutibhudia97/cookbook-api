@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 class ShoppingList(models.Model):
     """
-    For adding items to a shoppinglist.
+    For adding items and quantities to the shopping list.
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)

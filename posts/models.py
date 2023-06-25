@@ -6,6 +6,8 @@ class Post(models.Model):
     """
     Post model, related to 'owner', i.e. a User instance.
     Default image set so that we can always reference image.url.
+    Post model includes input sections for the posts title,
+    keywords, ingredients and method.
     """
     image_filter_choices = [
         ('_1977', '1977'), ('brannan', 'Brannan'),

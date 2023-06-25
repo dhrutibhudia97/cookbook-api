@@ -7,7 +7,9 @@ from rest_framework.response import Response
 
 
 class ShoppingListView(generics.ListCreateAPIView):
-    """View for creating shopping list items."""
+    """
+    View for creating shopping list item if user is logged in.
+    """
     queryset = ShoppingList.objects.all()
     serializer_class = ShoppingListSerializer
     permission_classes = [IsOwnerOrReadOnly]
@@ -17,12 +19,13 @@ class ShoppingListView(generics.ListCreateAPIView):
         return ShoppingList.objects.filter(owner=user)
 
     def perform_create(self, serializer):
-        """Current user is the one creating the shopping list items."""
         serializer.save(owner=self.request.user)
 
 
 class ShoppingListDetailedView(generics.RetrieveUpdateDestroyAPIView):
-    """Retrieving, updating, and deleting a shoppinglist item."""
+    """
+    Retrieving, updating, and deleting a shoppinglist item.
+    """
     queryset = ShoppingList.objects.all()
     serializer_class = ShoppingListDetailSerializer
     permission_classes = [IsOwnerOrReadOnly]
