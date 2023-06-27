@@ -57,6 +57,9 @@ CookBook api consists of 6 apps.
 ### Shopping List
 - Users are able to create, read, edit and delete items they can put onto their own shopping lists, if they are logged in.
 
+![shoppinglist backend](https://github.com/dhrutibhudia97/cookbook-api/assets/107180641/f7d95696-109d-407c-a054-f61ad091c034)
+
+
 
 ## Testing (manual in a table)
 
